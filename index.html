@@ -1,158 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #888;
+            text-align: center;
+        }
+        .checkbox-container {
+            margin: 20px 0;
+        }
+        .continue-btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            display: block;
+            width: 100%;
+        }
+        .continue-btn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        .continue-btn:hover:not(:disabled) {
+            background-color: #45a049;
+        }
 
-        <!-- Meta Title Tag -->
-        <title>PandaWep</title>
-        <link href="https://image.pandawep.in/logo2.jpg" rel="icon" type="image/x-icon" />
-        <!-- Meta Description Tag (Replace with your own) -->
-        <meta name="description" content="Everything Free For You 😁" />
-        <!-- Google -->
-        <meta name="google-site-verification" content="OJahABFVa28SKQ0GpFPSGU-yYlhFoGz7IKIu-XF4cMU" />
-        <!-- Meta Keywords Tag -->
-        <meta name="keywords" content="free movies, web series, anime, courses, mod apps, free code, resources, snippets, PandaWep, pandawep, panda wep, pandaweb, panda web, PandaWep , Panda Web Panda Wep" />
-        <link rel="icon" href="https://image.pandawep.in/logo2.jpg" sizes="32x32" />
-        <link rel="icon" href="https://image.pandawep.in/logo2.jpg" sizes="48x48" />
-        <link rel="icon" href="https://image.pandawep.in/logo2.jpg" sizes="96x96" />
-        <link rel="icon" href="https://image.pandawep.in/logo2.jpg" sizes="144x144" />
-        <meta property="og:image" content="https://image.pandawep.in/logo2.jpg">
-        <!-- Meta Image URL for Open Graph and Twitter Card -->
-        <meta property="og:image" content="https://image.pandawep.in/logo2.jpg" />
-        <meta name="twitter:image" content="https://image.pandawep.in/logo2.jpg" />
-        <meta property="discord:image" content="https://image.pandawep.in/logo2.jpg" />
-        <meta property="telegram:image" content="https://image.pandawep.in/logo2.jpg" />
-        <meta property="whatsapp:image" content="https://image.pandawep.in/logo2.jpg" />
-        <meta name="twitter:title" content="PandaWep" />
-        <meta name="twitter:description" content="Everything Free For You 😁" />
-        <meta name="twitter:image" content="https://image.pandawep.in/logo2.jpg" />
-        <!-- Additional Meta Tags -->
-        <meta name="author" content="PandaWep" />
-        <meta name="robots" content="index, follow" />
-        <meta name="og:title" content="PandaWep" />
-        <meta name="og:description" content="Everything Free For You 😁" />
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Canonical URLs for different sections -->
-        <link rel="canonical" href="https://movie.pandawep.in" />
-        <link rel="canonical" href="https://anime.pandawep.in" />
-        <link rel="canonical" href="https://corses.pandawep.in" />
-        <link rel="canonical" href="https://webseries.pandawep.in" />
-
-        <!-- Structured Data Markup for Search Engines -->
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@type": "WebSite",
-                "url": "https://movie.pandawep.in",
-                "name": "PandaWep - Movies",
-                "description": "Free movies streaming platform.",
-                "sameAs": ["https://movie.pandawep.in"]
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
             }
-        </script>
-
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@type": "WebSite",
-                "url": "https://anime.pandawep.in",
-                "name": "PandaWep - Anime",
-                "description": "Free anime streaming platform.",
-                "sameAs": ["https://anime.pandawep.in"]
+            h2 {
+                font-size: 20px;
             }
-        </script>
-
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@type": "WebSite",
-                "url": "https://corses.pandawep.in",
-                "name": "PandaWep - Courses",
-                "description": "Free online courses platform.",
-                "sameAs": ["https://corses.pandawep.in"]
+            p, ul {
+                font-size: 14px;
             }
-        </script>
-
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@type": "WebSite",
-                "url": "https://webseries.pandawep.in",
-                "name": "PandaWep - Web Series",
-                "description": "Free web series streaming platform.",
-                "sameAs": ["https://webseries.pandawep.in"]
+            .continue-btn {
+                font-size: 14px;
             }
-        </script>
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Terms and Conditions</h1>
+        <p><strong>Last Updated: <span id="current-date"></span></strong></p>
 
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@type": "WebSite",
-                "url": "https://modapp.pandawep.in",
-                "name": "PandaWep - Mod Apps",
-                "description": "Platform for modded apps and games.",
-                "sameAs": ["https://modapp.pandawep.in"]
-            }
-        </script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <header>
-            <h1>
-                Welcome to
-                <h1 style="color: rgb(255, 0, 0); text-shadow: 0px 5px 10px #ff0202;">PandaWep</h1>
-            </h1>
-        </header>
-        <div class="card-container">
-            <div class="footer-card glow-animation fade-animation">
-                <h3>Movies</h3>
-                <p>Explore our collection of movies</p>
-                <a href="#anime" title="Free Movies No Ads">Movies</a>
-            </div>
-            <div class="footer-card glow-animation fade-animation">
-                <h3>Anime</h3>
-                <p>Discover trending anime series</p>
-                <a href="#movies" title="Free Anime No Ads ">Anime</a>
-            </div>
-            <div class="footer-card glow-animation fade-animation">
-                <h3>Free Courses</h3>
-                <p>Enhance your skills with our courses</p>
-                <a href="#courses" title="Free Courses like C C++ Js Css Py ">Courses</a>
-            </div>
-            <div class="footer-card glow-animation fade-animation">
-                <h3>Mod APK with Antivirus</h3>
-                <p>Download mod apps with safety check</p>
-                <a href="#mod-apk" title="Mod App With safety check">ModApp</a>
-            </div>
-            <div class="footer-card glow-animation fade-animation">
-                <h3>Code Resources</h3>
-                <p>Access free code resources and snippets</p>
-                <a id="" href="#code-resources" title="Code resources and snippets">Code</a>
-            </div>
-            <div class="footer-card glow-animation fade-animation">
-                <h3>Web Series</h3>
-                <p>Watch exciting web series</p>
-                <a href="#web-series" title="Webseries Like">WebSeries</a>
-            </div>
+        <h2>1. Acceptance of Terms</h2>
+        <p>By accessing and using this Site, you accept and agree to be bound by these Terms and Conditions and our Privacy Policy. If you do not agree to these terms, you must discontinue use of the Site immediately.</p>
+
+        <h2>2. Purpose of the Site</h2>
+        <p>This Site is intended solely for providing resources and information related to the creation and use of Telegram bots. We only create bots and do not endorse any other activities.</p>
+
+        <h2>3. Prohibited Activities</h2>
+        <p>You agree not to engage in any illegal activities, including but not limited to:</p>
+        <ul>
+            <li>Creating or distributing bots that facilitate or promote illegal activities.</li>
+            <li>Sharing or promoting pirated movies or other copyrighted materials.</li>
+            <li>Sharing or distributing any sexual content, adult material, or any content that is intended for individuals aged 18 and older.</li>
+            <li>Using the Site or any resources provided herein to engage in fraud, harassment, or any other unlawful activities.</li>
+        </ul>
+
+        <h2>4. Warning</h2>
+        <p>The creation and use of Telegram bots must comply with all applicable laws and regulations. The Site does not endorse or support any illegal activities. It is your responsibility to ensure that your use of the Site and any bots created using the resources provided herein adhere to legal standards.</p>
+
+        <h2>5. Age Restriction</h2>
+        <p>You must be at least 18 years old to access and use this Site. By using this Site, you represent and warrant that you are at least 18 years of age.</p>
+
+        <h2>6. Limitation of Liability</h2>
+        <p>In no event shall <strong>pandawep.in</strong>, its owners, or its affiliates be liable for any damages, losses, or expenses arising from your use of this Site or the resources provided herein, including but not limited to any illegal activities.</p>
+
+        <h2>7. Modifications to Terms</h2>
+        <p><strong>pandawep.in</strong> reserves the right to modify these Terms and Conditions at any time. Any changes will be effective immediately upon posting on this Site. Your continued use of the Site following the posting of changes constitutes your acceptance of such changes.</p>
+
+        <h2>8. Contact Information</h2>
+        <p>If you have any questions or concerns regarding these Terms and Conditions, please contact us at <strong>help@pandawep.in</strong>.</p>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="agree-checkbox" />
+            <label for="agree-checkbox">I agree to the Terms and Conditions</label>
         </div>
 
-        <div class="footer-top">
-            <a href="https://www.instagram.com/pandawep1" target="_blank" title="Instagram" class="socials-item">
-                <i class="fa fa-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com/@PandaWep" target="_blank" title="YouTube" class="socials-item">
-                <i class="fa fa-youtube"></i>
-            </a>
-            <a href="https://telegram.me/pandawep" target="_blank" title="Telegram" class="socials-item">
-                <i class="fa fa-telegram"></i>
-            </a>
-            <a href="https://github.com/PandaWep" target="_blank" title="Github" class="socials-item">
-                <i class="fa fa-github"></i>
-            </a>
+        <button class="continue-btn" id="continue-btn" disabled>Continue</button>
+
+        <div class="footer">
+            <p>&copy; 2024 pandawep.in. All rights reserved.</p>
         </div>
-        <p id="flx">copyright © Pandawep. All rights reserved.</p>
-        <script src="script.js"></script>
-    </body>
+    </div>
+
+    <script>
+        // Get the current date and format it
+        const currentDate = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        // Insert the current date into the HTML
+        document.getElementById('current-date').textContent = currentDate;
+
+        // Enable the continue button when the checkbox is checked
+        const checkbox = document.getElementById('agree-checkbox');
+        const continueBtn = document.getElementById('continue-btn');
+
+        checkbox.addEventListener('change', function() {
+            continueBtn.disabled = !this.checked;
+        });
+
+        // Redirect to Google when the button is clicked
+        continueBtn.addEventListener('click', function() {
+            window.location.href = 'https://www.google.com';
+        });
+    </script>
+</body>
 </html>
